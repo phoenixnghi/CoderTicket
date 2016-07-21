@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CsTemplate</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <title>xTicket</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-  <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header"
+          aria-controls="navbar-header">
+    ☰
+  </button>
+  <div class="collapse navbar-toggleable-xs" id="navbar-header">
     <a class="navbar-brand" href="<%= root_path %>">Coder Ticket</a>
     <ul class="nav navbar-nav">
       <li class="nav-item">
@@ -18,7 +23,14 @@
         <a class="nav-link" href="#">Sign Up</a>
       </li>
     </ul>
-  </nav>  
+    <form class="form-inline pull-xl-right">
+      <%= form_tag(events_path, :method => "get", id: "search-form") do %>
+          <%= text_field_tag :search, params[:search], placeholder: "Search Events", class: "form-control" %>
+          <%= submit_tag "Search", :name => nil, class: "btn btn-secondary-outline" %>
+      <% end %>
+    </form>
+  </div>
+</nav>
 
 <%= yield %>
 

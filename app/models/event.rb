@@ -4,5 +4,9 @@ class Event < ActiveRecord::Base
   has_many :ticket_types
 
   validates_presence_of :extended_html_description, :venue, :category, :starts_at
-  validates_uniqueness_of :name, uniqueness: {scope: [:venue, :starts_at]}
+  validates_uniqueness_of :name, uniqueness: { scope: [:venue, :starts_at] }
+
+  def self.search(keyword)
+    where('name ILIKE ?', "%#{keyword}%")
+  end
 end

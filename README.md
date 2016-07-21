@@ -1,10 +1,10 @@
-# Homework 3 - *Name of App*
+# Homework 3 - *xTicket*
 
-**Name of your app** is a Ruby on Rails blog application that allows users to create and buy tickets to cool events. 
+**xTicket** is a Ruby on Rails blog application that allows users to create and buy tickets to cool events. 
 
-Submitted by: **Your Name Here**
+Submitted by: **Tran Phuong Nghi**
 
-Time spent: **X** hours
+Time spent: **xXx** hours
 
 URL: **Insert your Heroku URL here**
 
@@ -20,8 +20,8 @@ The following **required** functionality is complete:
 
 * [ ] Users can see a list of upcoming events. Past events should not be shown. **HINT**: Good candidate for a test.
 * [ ] Users can search for events from the homepage.
-* [ ] Users can click on an event to see details about the event. 
-* [ ] Users can click on "Book Now" to go to a page to purchase tickets.
+* [x] Users can click on an event to see details about the event. 
+* [x] Users can click on "Book Now" to go to a page to purchase tickets.
 
 #### Tickets
 

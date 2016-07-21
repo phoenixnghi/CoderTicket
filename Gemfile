@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 
+ruby '2.3.1'
+gem 'rails-assets-tether', '>= 1.1.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
+gem 'rails'
 # Use pg as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -26,7 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem 'bootstrap', '~> 4.0.0.alpha1'
+gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'simple_form'
 gem 'quiet_assets'
 gem 'better_errors', group: :development
@@ -42,6 +44,7 @@ gem 'font-kit-rails', '~> 1.2.0'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'guard-livereload', '~> 2.5', require: false
 end
 
 group :development do
