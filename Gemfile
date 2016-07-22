@@ -46,7 +46,11 @@ group :development, :test do
   gem 'byebug'
   gem 'guard-livereload', '~> 2.5', require: false
   gem 'guard-rspec', require: false
+end
+
+group :test do
   gem 'rspec-rails'
+  gem 'shoulda-matchers', require: false
 end
 
 group :development do
