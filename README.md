@@ -19,7 +19,7 @@ The following **required** functionality is complete:
 #### Events
 
 * [ ] Users can see a list of upcoming events. Past events should not be shown. **HINT**: Good candidate for a test.
-* [ ] Users can search for events from the homepage.
+* [x] Users can search for events from the homepage.
 * [x] Users can click on an event to see details about the event. 
 * [x] Users can click on "Book Now" to go to a page to purchase tickets.
 
@@ -59,7 +59,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [xTicket] [Tran Phuong Nghi]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
