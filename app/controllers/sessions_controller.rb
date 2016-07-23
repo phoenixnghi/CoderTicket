@@ -18,4 +18,16 @@ class SessionsController < ApplicationController
     flash[:success] = 'Logged out.'
     redirect_to root_path
   end
+
+  def callback
+    user = User.from_omniauth(env["omniauth.auth"])
+    if user.errors.full_messages[0] == 'Email has already been taken'
+      session[:user_id] = User.find_by(email: user.email).id
+      flash[:success]   = 'Logged in with your FB account'
+      redirect_to root_path
+    else
+      flash.now[:error] = "FB log in error: #{user.errors.full_messages.to_sentence}"
+      render 'new'
+    end
+  end
 end
