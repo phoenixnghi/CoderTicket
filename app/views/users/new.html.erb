@@ -1,0 +1,15 @@
+<h1 class="page_title">Join us!</h1>
+
+<div class="card card-block text-xs-center input_form">
+  <%= form_for @user do |f| %>
+      <%= f.text_field :name, class: 'form-control', placeholder: :name %>
+      <br>
+      <%= f.text_field :email, class: 'form-control', placeholder: :email %>
+      <br>
+      <%= f.password_field :password, class: 'form-control', placeholder: :password %>
+      <br>
+      <%= f.submit 'Create you account', class: 'btn btn-primary-outline' %>
+      <br>OR<br>
+      <%= link_to 'Register via Facebook', '/auth/facebook', class: 'btn btn-primary' %>
+  <% end %>
+</div>
