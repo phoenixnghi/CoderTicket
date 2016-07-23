@@ -1,0 +1,35 @@
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header"
+          aria-controls="navbar-header">
+    ☰
+  </button>
+  <div class="collapse navbar-toggleable-xs" id="navbar-header">
+    <a class="navbar-brand" href="<%= root_path %>">Coder Ticket</a>
+    <ul class="nav navbar-nav">
+      <% unless current_user %>
+          <li class="nav-item">
+            <%= link_to 'Log in', new_session_path, class: 'nav-link' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Register', new_user_path, class: 'nav-link' %>
+          </li>
+      <% else %>
+          <li class="nav-item">
+            <div class='nav-link'>
+              Welcome <strong><%= current_user.name %></strong>
+            </div>
+          </li>
+          <li class="nav-item">
+            <%= link_to image_tag('http://4.bp.blogspot.com/-AMNHVk8B2Pg/VgBsnJ6xuCI/AAAAAAAAGcQ/3vOrL-ej4CU/s1600/power_off.png', size: '18x18'), logout_path, method: 'delete', class: 'nav-link' %>
+          </li>
+      <% end %>
+    </ul>
+
+    <form class="form-inline pull-xl-right">
+      <%= form_tag(events_path, :method => "get", id: "search-form") do %>
+          <%= text_field_tag :search, params[:search], placeholder: "Search Events", class: "form-control" %>
+          <%= submit_tag "Search", :name => nil, class: "btn btn-secondary-outline" %>
+      <% end %>
+    </form>
+  </div>
+</nav>

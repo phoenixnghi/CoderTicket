@@ -1,0 +1,23 @@
+<h1 class="page_title">List of users</h1>
+
+<div class="container">
+    <table class="table table-striped">
+      <thead class="thead-default">
+      <tr>
+        <th>User ID</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <% User.all.each do |user| %>
+      <tr>
+        <td><%= user.id %></td>
+        <td><%= user.name %> <%= '(you)' if current_user.id == user.id %></td>
+        <td><%= user.email %></td>
+      </tr>
+      <% end %>
+      </tbody>
+    </table>
+</div>
