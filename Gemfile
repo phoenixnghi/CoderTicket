@@ -4,6 +4,7 @@ ruby '2.3.1'
 gem 'rails-assets-tether', '>= 1.1.0'
 gem 'omniauth'
 gem 'omniauth-facebook', '~> 3.0.0'
+gem 'rails_12factor'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'

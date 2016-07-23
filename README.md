@@ -18,7 +18,7 @@ The following **required** functionality is complete:
 
 #### Events
 
-* [ ] Users can see a list of upcoming events. Past events should not be shown. **HINT**: Good candidate for a test.
+* [-] Users can see a list of upcoming events. Past events should not be shown. **HINT**: Good candidate for a test.
 * [x] Users can search for events from the homepage.
 * [x] Users can click on an event to see details about the event. 
 * [x] Users can click on "Book Now" to go to a page to purchase tickets.
@@ -45,7 +45,7 @@ The following **required** functionality is complete:
 
 ### Optional Stories
 
-* [ ] Users can log in with Facebook.
+* [x] Users can log in with Facebook.
 * [ ] Users receive an email when they have purchased a ticket.
 * [ ] Users can see "related events" when browsing an event. Related events should belong to the same category and be in the same region.
 * [ ] User A can allow User B to edit User A's event. In other words, an event owner can assign other people to be "event admins". 

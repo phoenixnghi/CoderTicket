@@ -4,7 +4,8 @@
     ☰
   </button>
   <div class="collapse navbar-toggleable-xs" id="navbar-header">
-    <a class="navbar-brand" href="<%= root_path %>">Coder Ticket</a>
+    <a class="navbar-brand" href="<%= root_path %>">xTicket</a>
+    <form class="form-inline pull-xl-right">
     <ul class="nav navbar-nav">
       <% unless current_user %>
           <li class="nav-item">
@@ -20,16 +21,10 @@
             </div>
           </li>
           <li class="nav-item">
-            <%= link_to image_tag('http://4.bp.blogspot.com/-AMNHVk8B2Pg/VgBsnJ6xuCI/AAAAAAAAGcQ/3vOrL-ej4CU/s1600/power_off.png', size: '18x18'), logout_path, method: 'delete', class: 'nav-link' %>
+            <%= link_to image_tag('power_off.png', size: '20x20'), logout_path, method: 'delete', class: 'nav-link' %>
           </li>
       <% end %>
     </ul>
-
-    <form class="form-inline pull-xl-right">
-      <%= form_tag(events_path, :method => "get", id: "search-form") do %>
-          <%= text_field_tag :search, params[:search], placeholder: "Search Events", class: "form-control" %>
-          <%= submit_tag "Search", :name => nil, class: "btn btn-secondary-outline" %>
-      <% end %>
-    </form>
+        </form>
   </div>
 </nav>
