@@ -8,7 +8,7 @@ Time spent: **20** hours
 
 URL: *http://pxn-xticket.herokuapp.com/*
 
-SimpleCov Test Coverage: **Insert percentage or link to report here**
+SimpleCov Test Coverage: **50 / 240 LOC (20.83%) covered**
 
 ## User Stories
 
