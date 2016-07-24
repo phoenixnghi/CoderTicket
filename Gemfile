@@ -51,6 +51,8 @@ group :development, :test do
   gem 'byebug'
   gem 'guard-livereload', '~> 2.5', require: false
   gem 'guard-rspec', require: false
+  gem 'hirb'
+  gem 'awesome_print'
 end
 
 group :test do

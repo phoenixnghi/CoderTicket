@@ -1,0 +1,10 @@
+<h1 class="page_title">Add new ticket type</h1>
+
+<div class="card card-block xs-center input_form">
+  <%= simple_form_for [@event, @ticket_type] do |f| %>
+      <%= f.input :name %>
+      <%= f.input :price, as: :integer %>
+      <%= f.input :max_quantity, as: :integer %>
+      <%= f.submit class: 'btn btn-primary' %>
+  <% end %>
+</div>
