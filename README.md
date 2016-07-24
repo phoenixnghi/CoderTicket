@@ -4,7 +4,7 @@
 
 Submitted by: **Tran Phuong Nghi**
 
-Time spent: **xXx** hours
+Time spent: **20** hours
 
 URL: **Insert your Heroku URL here**
 

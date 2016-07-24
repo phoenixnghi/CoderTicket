@@ -53,6 +53,7 @@ group :development, :test do
   gem 'guard-rspec', require: false
   gem 'hirb'
   gem 'awesome_print'
+  gem 'simplecov', :require => false
 end
 
 group :test do
