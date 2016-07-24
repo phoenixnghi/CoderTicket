@@ -6,7 +6,7 @@ Submitted by: **Tran Phuong Nghi**
 
 Time spent: **20** hours
 
-URL: **http://pxn-xticket.herokuapp.com/*
+URL: *http://pxn-xticket.herokuapp.com/*
 
 SimpleCov Test Coverage: **Insert percentage or link to report here**
 
