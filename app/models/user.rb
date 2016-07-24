@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
   validates :name, :email, presence: true
   validates :email, uniqueness: true
 
+  has_many :my_events, class_name: 'Event', foreign_key: 'user_id'
+
   def self.from_omniauth(auth)
     user = where(email: auth.email).first_or_create do |user|
       user.name     = auth.info.name

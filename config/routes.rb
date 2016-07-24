@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
 
   get 'auth/:provider/callback' => 'sessions#callback'
+  get 'my_events' => 'events#my_events'
 
   resources :events do
     resources :tickets

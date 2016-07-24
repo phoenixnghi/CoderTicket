@@ -9,4 +9,12 @@ class Event < ActiveRecord::Base
   def self.search(keyword)
     where('name ILIKE ?', "%#{keyword}%")
   end
+
+  def self.order_by_created_day
+    order('created_at DESC')
+  end
+
+  def self.by_user_id(user_id)
+    where(user_id: user_id)
+  end
 end

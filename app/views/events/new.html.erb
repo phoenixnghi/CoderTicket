@@ -1,0 +1,14 @@
+<h1 class="page_title">Create new event</h1>
+
+<div class="card card-block xs-center input_form">
+  <%= simple_form_for @event do |f| %>
+      <%= f.input :name %>
+      <%= f.input :starts_at, as: :datetime %>
+      <%= f.input :ends_at, as: :datetime %>
+      <%= f.input :venue_id, :collection => @venues %>
+      <%= f.input :hero_image_url %>
+      <%= f.input :extended_html_description %>
+      <%= f.input :category_id, :collection => @categories %>
+      <%= f.submit class: 'btn btn-primary' %>
+  <% end %>
+</div>

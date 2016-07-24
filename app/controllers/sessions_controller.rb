@@ -20,7 +20,7 @@ class SessionsController < ApplicationController
   end
 
   def callback
-    user = User.from_omniauth(env["omniauth.auth"])
+    user = User.from_omniauth(env['omniauth.auth'])
     if user.errors.full_messages[0] == 'Email has already been taken'
       session[:user_id] = User.find_by(email: user.email).id
       flash[:success]   = 'Logged in with your FB account'

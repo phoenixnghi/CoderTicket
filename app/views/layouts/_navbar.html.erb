@@ -5,26 +5,37 @@
   </button>
   <div class="collapse navbar-toggleable-xs" id="navbar-header">
     <a class="navbar-brand" href="<%= root_path %>">xTicket</a>
-    <form class="form-inline pull-xl-right">
     <ul class="nav navbar-nav">
-      <% unless current_user %>
-          <li class="nav-item">
-            <%= link_to 'Log in', new_session_path, class: 'nav-link' %>
-          </li>
-          <li class="nav-item">
-            <%= link_to 'Register', new_user_path, class: 'nav-link' %>
-          </li>
-      <% else %>
-          <li class="nav-item">
-            <div class='nav-link'>
-              Welcome <strong><%= current_user.name %></strong>
-            </div>
-          </li>
-          <li class="nav-item">
-            <%= link_to image_tag('power_off.png', size: '20x20'), logout_path, method: 'delete', class: 'nav-link' %>
-          </li>
-      <% end %>
+      <li class="nav-item">
+        <%= link_to 'NEW EVENT', new_event_path, class: 'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to '|', '#', class: 'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'MY EVENTS', my_events_path, class: 'nav-link' %>
+      </li>
     </ul>
-        </form>
+    <form class="form-inline pull-xl-right">
+      <ul class="nav navbar-nav">
+        <% unless current_user %>
+            <li class="nav-item">
+              <%= link_to 'Log in', new_session_path, class: 'nav-link' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Register', new_user_path, class: 'nav-link' %>
+            </li>
+        <% else %>
+            <li class="nav-item">
+              <div class='nav-link'>
+                Welcome <strong><%= current_user.name %></strong>
+              </div>
+            </li>
+            <li class="nav-item">
+              <%= link_to image_tag('power_off.png', size: '20x20'), logout_path, method: 'delete', class: 'nav-link' %>
+            </li>
+        <% end %>
+      </ul>
+    </form>
   </div>
 </nav>
