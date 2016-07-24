@@ -36,7 +36,6 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'simple_form'
 gem 'quiet_assets'
-gem 'better_errors', group: :development
 gem 'font-awesome-rails'
 gem 'font-kit-rails', '~> 1.2.0'
 
@@ -47,6 +46,7 @@ gem 'font-kit-rails', '~> 1.2.0'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'better_errors'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'guard-livereload', '~> 2.5', require: false

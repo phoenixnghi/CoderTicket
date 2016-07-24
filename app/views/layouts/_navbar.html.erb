@@ -5,17 +5,31 @@
   </button>
   <div class="collapse navbar-toggleable-xs" id="navbar-header">
     <a class="navbar-brand" href="<%= root_path %>">xTicket</a>
-    <ul class="nav navbar-nav">
-      <li class="nav-item">
-        <%= link_to 'NEW EVENT', new_event_path, class: 'nav-link' %>
-      </li>
-      <li class="nav-item">
-        <%= link_to '|', '#', class: 'nav-link' %>
-      </li>
-      <li class="nav-item">
-        <%= link_to 'MY EVENTS', my_events_path, class: 'nav-link' %>
-      </li>
-    </ul>
+    <% if current_user %>
+        <ul class="nav navbar-nav">
+          <li class="nav-item btn-group">
+            <a class="dropdown-toggle nav-link" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              CREATE
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <%= link_to 'NEW EVENT', new_event_path, class: 'dropdown-item' %>
+              <%= link_to 'NEW VENUE', new_venue_path, class: 'dropdown-item' %>
+            </div>
+          </li>
+
+          <li class="nav-item btn-group">
+            <a class="dropdown-toggle nav-link" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              MANAGE
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <%= link_to 'MY EVENTS', my_events_path, class: 'dropdown-item' %>
+              <%= link_to 'VENUES', venues_path, class: 'dropdown-item' %>
+            </div>
+          </li>
+        </ul>
+    <% end %>
     <form class="form-inline pull-xl-right">
       <ul class="nav navbar-nav">
         <% unless current_user %>

@@ -1,7 +1,6 @@
 /*
  *= require font-kit-rails/open-sans
 */
-
 @import "bootstrap";
 @import "font-awesome";
 @import "col-helpers";
@@ -12,6 +11,7 @@
 body {
   font-family: 'Open Sans';
 }
+
 .btn.btn-danger {
   background-color: rgb(216, 87, 66);
   border: 2px solid rgb(241, 112, 91);
@@ -29,4 +29,11 @@ body {
 .container {
   max-width: 70%;
   margin: 0 auto;
+}
+
+footer.page-footer {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  background-color: rgba(87, 87, 89, 0.63);
 }

@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'events#index'
+
   resources :users
+  resources :venues
   resources :sessions, only: [:new, :create]
 
   delete 'logout' => 'sessions#destroy'

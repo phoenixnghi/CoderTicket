@@ -1,0 +1,10 @@
+<h1 class="page_title">Create new venue</h1>
+
+<div class="card card-block xs-center input_form">
+  <%= simple_form_for @venue do |f| %>
+      <%= f.input :name %>
+      <%= f.input :full_address %>
+      <%= f.input :region_id, :collection => @region %>
+      <%= f.submit class: 'btn btn-primary' %>
+  <% end %>
+</div>

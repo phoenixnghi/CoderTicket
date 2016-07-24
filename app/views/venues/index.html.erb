@@ -1,0 +1,21 @@
+<h1 class="page_title">List of venues</h1>
+
+<div class="container">
+  <table class="table table-striped">
+    <thead class="thead-default">
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @venues.each do |venue| %>
+        <tr>
+          <td><%= venue.name %></td>
+          <td><%= venue.full_address %></td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
