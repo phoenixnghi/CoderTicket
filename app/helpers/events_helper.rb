@@ -4,11 +4,13 @@ module EventsHelper
   end
 
   def is_publishable?
-    @event.user_id == current_user.id &&
+    !!current_user &&
+        @event.user_id == current_user.id &&
         @event.published_at.nil?
   end
 
   def is_editable?
-    @event.user_id == current_user.id
+    !!current_user &&
+        @event.user_id == current_user.id
   end
 end
