@@ -18,7 +18,7 @@ class TicketTypesController < ApplicationController
       flash[:success] = "TicketType #{@ticket_type.name} is created."
       redirect_to event_path(@ticket_type.event_id)
     else
-      flash.now[:error] = "Error #{@ticket_type.errors.full_messages.to_sentence}"
+      flash.now[:error] = @ticket_type.errors.full_messages.to_sentence
       render 'new'
     end
   end

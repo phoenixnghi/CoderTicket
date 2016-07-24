@@ -15,7 +15,7 @@ class VenuesController < ApplicationController
       flash[:success] = "Venue #{@venue.name} is created."
       redirect_to venues_path
     else
-      flash.now[:error] = "Error #{@venue.errors.full_messages.to_sentence}"
+      flash.now[:error] = @venue.errors.full_messages.to_sentence
       render 'new'
     end
   end

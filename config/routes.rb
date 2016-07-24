@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get 'auth/:provider/callback' => 'sessions#callback'
   get 'my_events' => 'events#my_events'
 
+  post 'events/:event_id' => 'events#publish', :as => 'publish_event'
+
   resources :events do
     resources :tickets
     resources :ticket_types
