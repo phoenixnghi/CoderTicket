@@ -59,6 +59,8 @@ end
 group :test do
   gem 'rspec-rails'
   gem 'shoulda-matchers', require: false
+  gem 'capybara'
+  gem 'selenium-webdriver'
 end
 
 group :development do
