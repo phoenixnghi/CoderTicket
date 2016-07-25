@@ -57,6 +57,14 @@ The following **required** functionality is complete:
 
 Describe any challenges encountered while building the app.
 
+## Video Walkthrough 
+
+Here's a walkthrough of implemented user stories:
+
+![Video Walkthrough](/app/assets/images/walkthrough.gif)
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
 ## License
 
     Copyright [xTicket] [Tran Phuong Nghi]
