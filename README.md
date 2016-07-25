@@ -15,6 +15,8 @@ SimpleCov Test Coverage: **50 / 240 LOC (20.83%) covered**
 The following **required** functionality is complete:
 
 * [ ] 10 model tests, 2 route tests, 2 controller tests, 2 view tests.
+- 10 model tests
+- 2 controller tests
 
 #### Events
 
