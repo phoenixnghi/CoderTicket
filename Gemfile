@@ -6,6 +6,7 @@ gem 'omniauth'
 gem 'omniauth-facebook', '~> 3.0.0'
 gem 'rails_12factor'
 gem 'simple_form'
+gem 'coveralls', require: false
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
