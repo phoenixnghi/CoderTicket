@@ -10,6 +10,8 @@ URL: *http://pxn-xticket.herokuapp.com/*
 
 SimpleCov Test Coverage: **87 / 221 LOC (39.37%) covered**
 
+[![Coverage Status](https://coveralls.io/repos/github/phoenixnghi/w3_xTicket/badge.svg?branch=master)](https://coveralls.io/github/phoenixnghi/w3_xTicket?branch=master)
+
 ## User Stories
 
 The following **required** functionality is complete:

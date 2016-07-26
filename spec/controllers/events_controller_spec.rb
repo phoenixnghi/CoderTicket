@@ -1,16 +1,15 @@
 require 'rails_helper'
 
 RSpec.describe EventsController, type: :controller do
-  describe "GET #index" do
-    it "renders the index template" do
+  describe 'GET #index' do
+    it 'renders the index template' do
       get :index
-      expect(response).to render_template("index")
+      expect(response).to render_template(:index)
     end
 
-    it "new" do
+    it 'GET #new' do
       get :new
       expect(response).to render_template(:new)
     end
-
   end
 end
