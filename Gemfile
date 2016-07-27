@@ -7,7 +7,8 @@ gem 'omniauth-facebook', '~> 3.0.0'
 gem 'rails_12factor'
 gem 'simple_form'
 gem 'coveralls', require: false
-
+gem 'rails-controller-testing'
+gem 'faker'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
@@ -61,6 +62,7 @@ group :test do
   gem 'shoulda-matchers', require: false
   gem 'capybara'
   gem 'selenium-webdriver'
+  gem 'factory_girl_rails'
 end
 
 group :development do
