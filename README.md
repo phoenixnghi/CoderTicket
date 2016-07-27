@@ -8,7 +8,8 @@ Time spent: **20** hours
 
 URL: *http://pxn-xticket.herokuapp.com/*
 
-SimpleCov Test Coverage: **87 / 221 LOC (39.37%) covered**
+SimpleCov Test Coverage: **45.93% covered at 0.64 hits/line)
+                           20 files in total. 209 relevant lines. 96 lines covered and 113 lines missed**
 
 [![Coverage Status](https://coveralls.io/repos/github/phoenixnghi/w3_xTicket/badge.svg?branch=master)](https://coveralls.io/github/phoenixnghi/w3_xTicket?branch=master)
 
